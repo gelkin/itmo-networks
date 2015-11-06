@@ -1,9 +1,13 @@
 package app.web.hw1.api.msg;
 
-/**
- * Created by Alex on 05.11.2015.
- */
-public class AnswerMessage extends Message{
-	RequestMessage receiverMessage;
+public class AnswerMessage extends Message {
+	private RequestMessage mReceiverMessage;
 
+	public AnswerMessage(RequestMessage receiverMessage) {
+		mReceiverMessage = receiverMessage;
+	}
+
+	public RequestMessage getReceiverMessage() {
+		return mReceiverMessage;
+	}
 }
